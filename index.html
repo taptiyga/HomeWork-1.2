@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1 class="title">Список задач</h1>
+        </div>
+
+        <div class="main">
+            <form class="form" id="form">
+
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder=" " id="formInput">
+                    <label for="" class="form__label">введите задачу</label>
+                </div>
+                <div class="form__buttons">
+                    <button class="form__button" id="buttonAdd">Добавить задачу</button>
+                </div>
+            </form>
+            <ul class="list" id="list">
+
+            </ul>
+        </div>
+        <div class="footer">
+            <button class="form__button" id="buttonDel">Очистить список</button>
+        </div>
+    </div>
+</body>
+
+</html>
