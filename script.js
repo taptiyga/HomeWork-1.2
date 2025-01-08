@@ -10,10 +10,10 @@ buttonAdd.addEventListener('click', (event) => {
     event.preventDefault()
     //достаем текст задачи из поля ввода
     const inputText = formInput.value
+    //формирует элемент списка
+    const inputHTML = `<li class="item">${inputText}</li>`
     //проверка на наличие текста в поле
     if (inputText != "") {
-        //формирует элемент списка
-        const inputHTML = `<li class="item">${inputText}</li>`
         //добавляем элемент списка и выводим на страницу
         list.insertAdjacentHTML('afterbegin', inputHTML)
     }
